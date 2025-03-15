@@ -1,0 +1,122 @@
+
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 1rem;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+p {
+    margin: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+}
+
+/* Header Styles, */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.highlight {
+    color: rgb(57, 158, 247);
+    font-weight: 700;
+    font-family: hebrew;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    color: #ecf0f1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main Layout */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    display: block;
+    margin-top: 10px;
+    max-width: 150px; /* Set a small maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional rounded corners */
+    margin: 0 auto;
+}
+
+/* Web Dev Resources Section */
+.card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.card ul li {
+    margin: 0.5rem 0;
+}
+
+.card ul li a {
+    color: rgb(57, 158, 247);
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: rgb(57, 158, 247);
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #000000;
+    padding: 10px;
+    margin-top: 20px;
+}
