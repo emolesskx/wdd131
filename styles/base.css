@@ -29,9 +29,9 @@ h1 {
 }
 
 .highlight {
-    color: rgb(57, 158, 247);
+    color: rgb(255, 255, 255);
     font-weight: 700;
-    font-family: hebrew;
+    font-family: 'Roboto' sans-serif;
 }
 
 nav ul {
@@ -97,7 +97,7 @@ main {
 }
 
 .card ul li a {
-    color: rgb(57, 158, 247);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -108,7 +108,7 @@ main {
 figcaption {
     text-align: center;
     font-size: 0.9em;
-    color: rgb(57, 158, 247);
+    color: rgb(0, 0, 0);
     margin-bottom: 5px;
 }
 
