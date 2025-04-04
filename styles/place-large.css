@@ -4,6 +4,7 @@
     --secondary-color: #116530;
     --text-color: #ffffff;
     --background-color: #f5f5f5;
+    --weather-icon-color: yellow; /* Set the color for the weather icon */
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .header {
-    background-color: #C8102E; /* Red background */
+    background-color: var(--primary-color); /* Red background */
     color: white; /* White text */
     text-align: center;
     font-size: 2rem; /* Large font size */
@@ -28,6 +29,19 @@ body {
     .header {
         font-size: 3rem; /* Even larger text for emphasis */
         padding: 3rem 1rem; /* More padding for better spacing */
+    }
+
+    .weather::after {
+        content: ''; /* No text content */
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: var(--weather-icon-color); /* Color for the icon */
+        border-radius: 50%;
+        margin-left: 10px;
+        background-image: url('path/to/sunny-cloud-icon.svg'); /* SVG Icon */
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -72,7 +86,7 @@ body {
 }
 
 .footer {
-    background-color: #C8102E; /* Red background */
+    background-color: var(--primary-color); /* Red background */
     color: white; /* White text for contrast */
     text-align: center;
     padding: 2rem 1rem; /* Padding for a spacious look */
