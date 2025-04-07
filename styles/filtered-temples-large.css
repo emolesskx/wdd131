@@ -1,0 +1,67 @@
+/* temples-larger.css - Larger Screens (1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+        height: 100vh;
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #4B0082;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Navigation - Show as a horizontal menu */
+    nav {
+        display: flex !important;
+        position: static;
+        background: none;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-end;
+    }
+
+#nav-menu {
+    margin-left: auto;
+}
+
+    nav a {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    #menu-toggle {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    /* Gallery - Grid Layout for Larger Screens */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .gallery figure {
+        max-width: 90%;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem;
+        padding: 15px;
+        text-align: center;
+    }
+}
