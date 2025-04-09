@@ -16,7 +16,7 @@ const formattedDate = currentDate.toLocaleString("en-GB", {
 
 yearElement.innerHTML = `
   <span class="highlight">
-    ${currentDate.getFullYear()} &copy; Elisha Sunday ✅ Software Engineer ✅ Nigeria
+    ${currentDate.getFullYear()} &copy; Tonderayi K Tafirenyika, Zimbabwe
   </span>`;
 lastModifiedElement.innerHTML = `
   <span class="lastmodified">

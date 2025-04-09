@@ -1,5 +1,5 @@
 /* temples-larger.css - Larger Screens (1200px and up) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1080px) {
 
     body {
         display: grid;
