@@ -1,0 +1,97 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------h1 style---*/
+
+.form-delimitations h1 .title {
+    color: rgb(130, 255, 14);
+    font-size: 25px;
+    font-weight: 700;
+    background-color: black;
+    padding: 0 .5rem;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+
+.label{
+
+    font-weight: 700;
+    color: rgb(189, 9, 39);
+}
+
+p {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+h3{
+    text-align: center;
+    color: rgb(130, 255, 14);
+    font-size: 25px;
+    font-weight: 700;
+    background-color: black;
+    padding: 10px 4%;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/*----------form delimitations------------*/
+
+section.form{
+
+    padding: 40px 4%;
+}
+
+/*---------max-width form------------*/
+
+form{
+   
+    max-width: 400px;
+    margin: 0 auto;/*center the form*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+select{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(130, 255, 14);
+    border-radius: 10px;
+    background-color: rgb(130, 255, 14);
+    height: 35px;
+    padding-left: 0.5rem;
+
+}
+
+/*--------delimitations footer------------------*/
+footer{
+
+    padding: 1px 4%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 500px;
+
+}

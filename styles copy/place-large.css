@@ -1,0 +1,148 @@
+/* Global styles */
+:root {
+    --primary-color: #C8102E;
+    --secondary-color: #116530;
+    --text-color: #ffffff;
+    --background-color: #f5f5f5;
+    --weather-icon-color: yellow; /* Set the color for the weather icon */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.header {
+    background-color: var(--primary-color); /* Red background */
+    color: white; /* White text */
+    text-align: center;
+    font-size: 2rem; /* Large font size */
+    font-weight: bold;
+    padding: 2rem 1rem; /* Padding for a spacious look */
+    border-bottom: 10px solid #007A33; /* Green border at the bottom */
+}
+
+/* Apply this style only for large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .header {
+        font-size: 3rem; /* Even larger text for emphasis */
+        padding: 3rem 1rem; /* More padding for better spacing */
+    }
+
+    .weather::after {
+        content: ''; /* No text content */
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: var(--weather-icon-color); /* Color for the icon */
+        border-radius: 50%;
+        margin-left: 10px;
+        background-image: url('path/to/sunny-cloud-icon.svg'); /* SVG Icon */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.data, .weather {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.data {
+    top: 30%;
+    left: 2%;
+    width: 40%;
+}
+
+.weather {
+    top: 80%;
+    right: 5%;
+    width: 30%;
+}
+
+.footer {
+    background-color: var(--primary-color); /* Red background */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 2rem 1rem; /* Padding for a spacious look */
+    font-size: 2rem; /* Readable font size */
+    font-weight: bold;
+    line-height: 1.6; /* Improve spacing */
+    margin-top: 1rem;
+}
+
+.footer p {
+    margin: 0.5rem 0; /* Provide spacing between lines */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Space between text elements */
+    flex-wrap: wrap;
+}
+
+.footer span {
+    font-weight: bold; /* Highlight key text */
+}
+
+.footer .icon {
+    margin: 0 5px; /* Space out icons for neatness */
+}
+
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .data, .weather {
+        position: static;
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .data {
+        width: 45%;
+    }
+
+    .weather {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .data, .weather {
+        position: static;
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+}

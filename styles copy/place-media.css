@@ -1,0 +1,51 @@
+@media (max-width: 700px) {
+    header  h1 {
+      font-size: 20px;
+    }
+    .hero-contents {
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: initial;
+    }
+    #weather {
+      position: initial;
+      margin-top: -11px;
+      height: 15rem;
+     
+      height: 100%;
+    }
+    .hero-img-large-screen {
+      display: none;
+    }
+    .hero-img-small-screen {
+      display: block;
+      height: 15rem !important;
+    }
+    .first-hero-span,
+    .data {
+      margin: auto;
+      width: 100% !important;
+    }
+    .data{
+      border: 1px solid rgb(226, 225, 225);
+    }
+    .data h2 {
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+    }
+    .weather-icon {
+      display: block;
+    }
+    .weather-icon img {
+    display: block;
+    height: 10rem !important;
+    width: 6rem;
+    margin: auto;
+    }
+     .weather-emoji{
+      display: none;
+    }
+  }
+  

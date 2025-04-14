@@ -1,0 +1,108 @@
+/* Root Variables */
+:root {
+  --primary-color: #c8102e;
+  --secondary-color: #006400;
+  --text-color: white;
+  --background-color: #f5f5f5;
+  --box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --padding: 10px;
+  --font-size-header: 24px;
+  --font-size-footer: 14px;
+  --font-size-main: 16px;
+}
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: var(--padding);
+  font-size: var(--font-size-header);
+  font-weight: bold;
+}
+
+/* Main Image */
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Data and Weather Sections */
+.data, .weather {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: var(--padding);
+  margin: 10px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.data h2, .weather h2 {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 5px;
+  margin: -10px -10px 10px -10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.footer {
+  background-color: #C8102E; /* Red background */
+  color: white; /* White text for contrast */
+  text-align: center;
+  padding: 1.5rem 1rem; /* Adjust padding for mobile */
+  font-size: 1rem; /* Slightly smaller font size for smaller screens */
+  font-weight: normal;
+  line-height: 1.5; /* Improve spacing */
+  margin-top: 1rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px; /* Reduce space between elements for smaller screens */
+  flex-wrap: wrap; /* Wrap elements if needed */
+  font-size: 0.9rem; /* Reduce text size on mobile */
+}
+
+.footer span {
+  font-weight: bold; /* Highlight key text */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .footer {
+      padding: 1rem; /* Reduce padding on smaller screens */
+      font-size: 0.9rem; /* Adjust font size for readability */
+  }
+
+  .footer p {
+      flex-direction: column; /* Stack items for better mobile readability */
+      text-align: center;
+      gap: 4px;
+  }
+}
+
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .data, .weather {
+    width: 90%;
+  }
+}
