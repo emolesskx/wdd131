@@ -1,1 +1,1 @@
-# Responsive Ecommerce Website Using HTML CSS JAVASCRIPT
+# Responsive Ecommerce Website for Tech Store Using HTML CSS JAVASCRIPT
