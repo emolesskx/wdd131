@@ -7,20 +7,25 @@
 */
 
 :root {
-    /* Primary and Secondary Colors */
-    --primary-color: #023047; /* Dark Blue */
-    --secondary-color: #8ECae6; /* Light Sky Blue */
-    
-    /* Accent Colors */
-    --accent1-color: #219EBC; /* Bright Blue */
-    --accent2-color: #FFB703; /* Yellow-Orange */
-    --accent3-color: #FB8500; /* Orange */
-    --accent4-color: #023047; /* Dark Blue */
-    --accent5-color: #219EBC; /* Bright Blue */
-
-    /* Text Colors */
-    --text-color-main: #023047; /* Dark Blue */
-    --text-color-secondary: #ffffff; /* White */
+     
+ 
+            /* Primary and Secondary Colors */
+            --primary-color: #003049; /* Dark Blue */
+            --secondary-color: #d62828; /* Red */
+          
+            /* Accent Colors */
+            --accent1-color: #f77f00; /* Orange */
+            --accent2-color: #fcbf49; /* Yellow */
+            --accent3-color: #eae2b7; /* Light Beige */
+            --accent4-color: #003049; /* Dark Blue */
+            --accent5-color: #f77f00; /* Orange */
+          
+            /* Text Colors */
+            --text-color-main: #003049; /* Dark Blue */
+            --text-color-secondary: #ffffff; /* White */
+          
+          
+      
     
     /* Fonts */
     --heading-font: "Roboto", sans-serif;
